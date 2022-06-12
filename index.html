@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.dc4ad4c5.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABGtJREFUWEfVl2mITm0Yx39njDWTrBnZt7KkkUzii6UsKSOSIUMIWVJ2xlgnkyVL2bOE7NnygZAPSkn2JWuyz5CdxCMc/Z9rznvOeZ7HvOP9MPP61/TMc9/Xue7/fS3/6zyOC0lANjAOSKVkUACsA/IcF3KA3JI5N+6UOSKQX4I3j2VQIAJuKd0+euxfSqBVK+jfH2rUgDt3YPt2+Pz5zwJZrhxkZPyHCIwcCRs2QHKyf+DVq9CxI3z5UjwSXbrA5s3QuHECAmPGwKhRULcu5OfD4sWwf785rlMHHjyAChXs+4sXULu2/T9pEqxa9e8E5Hv9eihTJkENjB4NGzeGnfz4AenpcPkyDB1q4fbQsKE569ULTp2C7t2LJpCZCbt3g+P8Yxcuwnv3oFkzy+eaNTBjhhkuXAjz5sHYsbBO+lGItDQYOBBmzYL796F5898TaNkSLlyASpXM5sqVaHR9Aikp8PGjbZ48CT17wocPoPWlS41Mhw5w7px/yIEDloYJE+DxY+jaFdq0gSNHwkSSkuw5RVI4dgz69YNIJECgVi14+dIM9u0Dhev9e6hSBWbOhCVLbO/sWejUyT9AKVI+v361tZs3oX37MIERI2DLFlt7/hxatzbfIR2oXh1evzajgwchK8tSoXyJ7eHDtteoEZw5A/XqhQ/RN9eFwYNh715/T+2m9NSvb2sqQnVAIfwUlC/v30IpmD3bciY0aABPnvhOa9aE7Gzo2xdUiMKjR6AO0rNBDB8OW7faytu31kmRSAICWvr0CSpXhmvXYNs2WLnS2q5p0/jbakU5PX/e9lSc48fH26nYVKzC6dMwfz4obd+/Rz8Td4GKUW3XuTOsXg0TJyYmoN5fscL2Jk82whKojAzrDj2vaBWBMIETJ/xeVj6VfzlRzhPh+HHrFqFHD+uIPXtALVdMhAnoNrqVh4cPLfw/f8a7q1oVCgpAtaN9KeL16/b57Rs8e2YF64mO0iv/ipAKs2LF6F+YwKBBplQegu0XS0G9r/QIFy9aPbRtC+/eWcFKlG7d8p9SQXs6EPAVJiD9f/rUtnUracObN/G3L1sWbt+GJk1sb/p0WLYsbKeClJp6kGgNGBDnK0xAkpqX5xupmI4ejScwbZqpo6Bwq02V/yB27TJN8LB2rSlmEMnJhSlQnhTuRYtCg4K7d6Fdu/Cs79bNpFR5FDZtAg2xWCj8LVr4q7m5MHdu2CotDccdMsSNDhnNc0EiIWn15r00PCfHNELCM2WKFZ6gfKviY28v7de7gUdStonqKTMTx3XVb4VQ3iXBGip68SgKstVbUezg0TPVqsXXztSpsHx52GNWVoCAdF9DQy8fcnDpki+zsUR0O4V9587EFINzxbMYNgx27Ajbp6fjuJGIy6FDFmbJrgf1sKZicLJp4mkoLVhAtD5+B9XUq1cgIoLaVFFVGoNwHBw3JcWN2/CM5Eg6nppqk/LGjeK/9/XuDX36gNRVaUokZn/va3nR5flHu/+Ln2al/uO0VH+e/wIdS6nmpHixlwAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAexJREFUOE+tk0sohFEYhp/fRCaxFSWUDbKVS1kos3OJjVJmpbGwUOxcNnIpNQmThdWQolwWshAri2lmSsNCkcuCNKGpsRAzzByd//vHpWbjcjbn7/R/z/e+7/mOoWAUGAKy+NmKA+OGgtgvilOt4hqg0jbOyYHaWjg7g5ub9Nry8/kENDdDSQmsrsLjI4RCUFYG8ThUVsL19XdIby+43RagrQ3W1+H2FoJBmJyEw0OYn4f6elhYgMXFT0B3N3i9EAhYgKkp0BB96HBAa6t01N1jMbExPQ27u1BQAKen8t3ZaQEmJqCjA3Z2IDcXenoE5PGIjUAAWlrg/h5mZ0HLLy01FUsGAwMwMgLn5zAzAysrIreiAk5OoLFRdq3M7YbXV9jagrc3C9DeDhsb8PwMhYUQjQqgv18KtGedg80GdjtcXkI4DNnZFqCoSDwvLYHTKcWGAUdHkExCQ4PZzQyyq0uAy8vym2lheBjGxuQG6uogkYC+Ppibk11nodfVlXjX+eztmXkZyu9XVFfD/j40NcHBAUQi4vf4GGpq5DYyM+HlBTIy5Gp9PqiqwlDhsGJwENbWYHMT9EBp2dvb4HLB3Z1014CnJ4GUl8vM5OVhKJtNmZJTq7hYJjEV5Nf506N9cQEPDx+n//KY/vSc3wH9c8vpc7e8MQAAAABJRU5ErkJggg==">
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
+    <title>Weather App</title>
+    <script type="module" crossorigin src="/assets/index.0471d623.js"></script>
+    <link rel="stylesheet" href="/assets/index.13bf81d0.css">
+  </head>
+
+  <body class="antialiased font-Roboto">
+    <div class="h-screen flex flex-col justify-center items-center bg-gray-100">
+      <h1 class="text-5xl font-semibold text-slate-900 mb-10">
+        <span class="text-6xl font-extrabold text-red-600">Weather</span>
+        App
+      </h1>
+      <div class="bg-white shadow-2xl rounded-lg px-1">
+        <div class="m-2 p-2">
+            <input
+              required
+              class="underline-offset-2 text-lg shadow-2xl px-7 py-3 pt-7 outline-none rounded-md"
+              type="text"
+              placeholder="Enter your city"
+              id="input_el"
+            />
+          <input
+            class="text-center p-3 shadow-2xl cursor-pointer hover:bg-red-500 bg-red-600 rounded-md text-white font-semibold"
+            type="button"
+            value="Search"
+            id="search_btn"
+          />
+        </div>
+        <div id="weather">
+          <div class="m-2 p-4">
+            <p id="cityEl" class="text-4xl font-thin text-slate-700">City</p>
+          </div>
+          <div class="m-2 p-4">
+            <p id="tempEl" class="text-8xl font-semibold text-gray-900">0<span class="text-2xl">&#8451</span></p>
+          </div>
+          <div id="imgEl" class="m-2 p-4">
+            <!-- <img id="imgEl" class="w-28 " src="http://openweathermap.org/img/wn/10d@2x.png" alt="img"> -->
+          </div>
+          <div  class="m-2 p-4">
+            <p id="desEl" class="text-3xl font-light ">Weather</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
